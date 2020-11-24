@@ -1,0 +1,180 @@
+#dashboard-page
+{
+    width: 100vw;
+    height: 100vh;
+    background: url('../../img/cover.jpg') no-repeat center center;
+    background-size: cover;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#dashboard-page .dashboard-panel
+{
+    width: 70%;
+    height: 90%;
+    margin-right: 5vw;
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#dashboard-page .dashboard-panel .gerenciarEditora,
+#dashboard-page .dashboard-panel .gerenciarAutor
+{
+    width: 300px;
+    height: auto;
+}
+
+#dashboard-page .dashboard-panel .listarEditora,    
+#dashboard-page .dashboard-panel .listarAutor
+{
+    width: 600px;
+    height: auto;
+}
+
+#dashboard-page .dashboard-panel .gerenciarEditora,
+#dashboard-page .dashboard-panel .gerenciarAutor,
+#dashboard-page .dashboard-panel .listarEditora,    
+#dashboard-page .dashboard-panel .listarAutor
+{
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    border: 1px solid #F9A602;
+    background: linear-gradient(156.04deg, #E0BF94 0%, #592606 80%);
+}
+
+#dashboard-page .dashboard-panel .gerenciarEditora h3,
+#dashboard-page .dashboard-panel .gerenciarAutor h3,
+#dashboard-page .dashboard-panel .listarEditora h3,
+#dashboard-page .dashboard-panel .listarAutor h3
+{  
+    color: #fb9f06;
+
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 44px;
+
+    text-shadow: -1px 0 black, 0 1px black,
+      1px 0 black, 0 -1px black;
+}
+
+#dashboard-page .dashboard-panel .gerenciarEditora form,
+#dashboard-page .dashboard-panel .gerenciarAutor form
+{  
+    height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+#dashboard-page .dashboard-panel .gerenciarEditora form label,
+#dashboard-page .dashboard-panel .gerenciarAutor form label
+{  
+    color: #F9A602;
+    text-shadow: -1px 0 black, 0 1px black,
+      1px 0 black, 0 -1px black;
+}
+
+#dashboard-page .dashboard-panel .gerenciarEditora form input,
+#dashboard-page .dashboard-panel .gerenciarAutor form input
+{  
+    width: 200px;
+    height: 30px;
+    padding: 0 16px;
+
+    font-size: medium;
+    background: #FBFBFB;
+
+    border-radius: 10px;
+    border: 1px solid #000;
+
+    outline: none;
+    transition: background-color 1s;
+}
+
+#dashboard-page .dashboard-panel .gerenciarEditora form input:focus,
+#dashboard-page .dashboard-panel .gerenciarAutor form input:focus
+{
+    background: #EBEBEB;
+}
+
+#dashboard-page .dashboard-panel .gerenciarEditora form button,
+#dashboard-page .dashboard-panel .gerenciarAutor form button
+{
+    width: 200px;
+    height: 30px;
+
+    font-size: medium;
+    background: #fb9f06;
+
+    border-radius: 10px;
+    border: 1px solid #000;
+
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#dashboard-page .dashboard-panel .gerenciarEditora form button:hover
+{
+    background: #fc8c11;
+}
+
+/* Formatar tabelas */
+
+table
+{
+    width: 60%;
+    color: #000;
+    background: #fc8c11;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+table .editar
+{
+    cursor: pointer;
+    font-size: small;
+    width: 70px;
+    height: 30px;
+    background-color: aquamarine;
+    transition: background-color 0.2s;
+}
+
+table .editar:hover
+{
+    background-color: aqua;
+}
+
+table .excluir
+{
+    cursor: pointer;
+    width: 70px;
+    height: 30px;
+    background-color: brown;
+    transition: background-color 0.2s;
+}
+
+table .excluir:hover
+{
+    background-color: firebrick;
+}
+
+table .excluir a
+{
+    font-size: small;
+    color: black;
+    text-decoration: none;
+}
